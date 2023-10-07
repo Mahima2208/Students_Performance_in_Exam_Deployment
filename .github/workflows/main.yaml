@@ -81,11 +81,6 @@ jobs:
       - name: Login to Amazon ECR
         id: login-ecr
         uses: aws-actions/amazon-ecr-login@v1
-      
-      
-      - name: Pull latest images
-        run: |
-         docker pull $ECR_REGISTRY/$ECR_REPOSITORY:latest
          
       # - name: Stop and remove  container if running
       #   run: |
